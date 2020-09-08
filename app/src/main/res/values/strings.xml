@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">NapoleonApp</string>
+    <string name="app_name">NapoleonTestApp</string>
+    <string name="test_text">Texto para probar</string>
 </resources>
