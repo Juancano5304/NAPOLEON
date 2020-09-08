@@ -1,4 +1,4 @@
-package com.nequi.napoleonapp
+package com.nequi.napoleonapp.favorites
 
 import androidx.lifecycle.ViewModel
 
