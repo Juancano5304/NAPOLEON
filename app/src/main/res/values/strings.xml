@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">NapoleonTestApp</string>
     <string name="test_text">Texto para probar</string>
+    <string name="bienvenido_a_la_prueba_de_napoleon_chat">Bienvenido a la prueba de Napoleon Chat</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="ingresa_tu_correo_electr_nico">Ingresa tu correo electrónico</string>
 </resources>
