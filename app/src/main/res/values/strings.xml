@@ -4,4 +4,9 @@
     <string name="bienvenido_a_la_prueba_de_napoleon_chat">Bienvenido a la prueba de Napoleon Chat</string>
     <string name="ingresar">Ingresar</string>
     <string name="ingresa_tu_correo_electr_nico">Ingresa tu correo electrónico</string>
+    <string name="jsonplaceholder_url">http://jsonplaceholder.typicode.com/</string>
+    <string name="no_tienes_favoritos_agregados_d">No tienes favoritos agregados :D</string>
+    <string name="favorite_star">favorite star</string>
+    <string name="recargar">Recargar</string>
+    <string name="logo_de_napoleon_test">Logo de Napoleon Test</string>
 </resources>

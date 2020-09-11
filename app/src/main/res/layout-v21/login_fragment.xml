@@ -57,6 +57,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="@color/secondaryLightColor"
         app:layout_constraintBottom_toBottomOf="parent"
+        android:onClick="callServiceGetPosts"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"

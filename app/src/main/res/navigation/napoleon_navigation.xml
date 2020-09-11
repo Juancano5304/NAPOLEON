@@ -3,21 +3,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/napoleon_navigation"
-    app:startDestination="@id/loginFragment">
+    app:startDestination="@id/listFragment">
 
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.nequi.napoleonapp.login.LoginFragment"
-        android:label="login_fragment"
-        tools:layout="@layout/login_fragment" />
     <fragment
         android:id="@+id/listFragment"
         android:name="com.nequi.napoleonapp.list.ListFragment"
         android:label="list_fragment"
-        tools:layout="@layout/list_fragment" />
+        tools:layout="@layout/list_fragment" >
+        <action
+            android:id="@+id/action_listFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_listFragment_to_favoritesFragment"
+            app:destination="@id/favoritesFragment" />
+    </fragment>
     <fragment
         android:id="@+id/detailsFragment"
         android:name="com.nequi.napoleonapp.details.DetailsFragment"
         android:label="details_fragment"
-        tools:layout="@layout/details_fragment" />
+        tools:layout="@layout/details_fragment" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.nequi.napoleonapp.favorites.FavoritesFragment"
+        android:label="favorites_fragment"
+        tools:layout="@layout/favorites_fragment" />
 </navigation>

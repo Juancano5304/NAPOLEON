@@ -1,13 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".details.DetailsFragment">
-
-    <TextView
+<layout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello" />
+        android:padding="24dp"
+        android:background="@color/primaryDarkColor">
 
-</FrameLayout>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_user"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryColor"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/secondaryTextColor"
+            android:padding="8dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Usuario Nº 1" />
+
+        <ImageView
+            android:id="@+id/imageview_details_favorite"
+            android:layout_width="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_height="50dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_stars_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/favorite_star" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textview_post_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/primaryLightColor"
+            android:padding="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/primaryTextColor"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/textview_user"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textview_user"
+            tools:text="Post Nº 1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@id/textview_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="viewStart"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/imageview_details_favorite"
+            app:layout_constraintEnd_toStartOf="@+id/imageview_details_favorite"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageview_details_favorite"
+            tools:text="Título de prueba" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:textAlignment="viewStart"
+            android:id="@+id/textview_body"
+            app:layout_constraintTop_toBottomOf="@+id/textview_title"
+            tools:layout_editor_absoluteX="42dp"
+            tools:text="ghdsj fhewi  bdjs fjk fbdsmjdfdsfjdjhdfjsd
+        dhsjfkdjf  fjdksjg
+         fbdsjkdjgnjfkgjfjdkhfgj
+        sdfbn kdfngmlfdijuwieurhje295uebfslkdfkjnfglnfjdghabfjdkgjhfjdbfajdf
+        skdfhuiuet" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
